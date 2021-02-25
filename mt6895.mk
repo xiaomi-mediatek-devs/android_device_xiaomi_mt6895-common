@@ -27,9 +27,6 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
