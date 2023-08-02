@@ -118,7 +118,9 @@ class XiaomiMt6895UdfpsHander : public UdfpsHandler {
         LOG(INFO) << __func__ << " result: " << result << " vendorCode: " << vendorCode;
         if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
             setFingerDown(false);
-            setFodStatus(FOD_STATUS_OFF);
+            if (!enrolling) {
+                setFodStatus(FOD_STATUS_OFF);
+            }
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
              * vendorCode = 21 waiting for fingerprint authentication
@@ -130,13 +132,33 @@ class XiaomiMt6895UdfpsHander : public UdfpsHandler {
 
     void cancel() {
         LOG(INFO) << __func__;
+        enrolling = false;
+
         setFingerDown(false);
+        setFodStatus(FOD_STATUS_OFF);
+    }
+
+    void preEnroll() {
+        LOG(INFO) << __func__;
+        enrolling = true;
+    }
+
+    void enroll() {
+        LOG(INFO) << __func__;
+        enrolling = true;
+    }
+
+    void postEnroll() {
+        LOG(INFO) << __func__;
+        enrolling = false;
+
         setFodStatus(FOD_STATUS_OFF);
     }
 
   private:
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
+    bool enrolling = false;
 
     void setFodStatus(int value) {
         int buf[MAX_BUF_SIZE] = {TOUCH_ID, Touch_Fod_Enable, value};
