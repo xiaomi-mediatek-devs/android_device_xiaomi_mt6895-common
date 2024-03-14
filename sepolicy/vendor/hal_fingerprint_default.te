@@ -11,3 +11,5 @@ allow hal_fingerprint_default vendor_touchfeature_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_fingerprint_sysfs:file rw_file_perms;
 
 allow hal_fingerprint_default sysfs_wakeup:file rw_file_perms;
+
+allow hal_fingerprint_default vendor_displayfeature_device:chr_file { ioctl open read write };
