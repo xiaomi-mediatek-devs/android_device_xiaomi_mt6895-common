@@ -20,6 +20,14 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+	cat <<EOF >>"$1"
+		"device/xiaomi/mt6895-common",
+		"hardware/mediatek",
+		"hardware/xiaomi"
+EOF
+}
+
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
