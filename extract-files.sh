@@ -131,6 +131,19 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/lib64/mt6895/libmnl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcutils.so" "${2}" || "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
+        vendor/lib64/lib3a.ae.pipe.so|\
+        vendor/lib64/libteei_daemon_vfs.so|\
+        vendor/lib64/mt6895/libaaa_toneutil.so|\
+        vendor/lib64/mt6895/lib3a.flash.so|\
+        vendor/lib64/mt6895/lib3a.sensors.color.so|\
+        vendor/lib64/mt6895/lib3a.sensors.flicker.so)
+            [ "$2" = "" ] && return 0
+            grep -q "liblog.so" "${2}" || "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
         *)
             return 1
             ;;
