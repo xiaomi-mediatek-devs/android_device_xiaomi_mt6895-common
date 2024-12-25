@@ -183,6 +183,9 @@ PRODUCT_PACKAGES += \
     LineageSystemUIOverlayMT6895 \
     LineageDialerMT6895
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/rsc,$(TARGET_COPY_OUT_VENDOR)/etc/rsc)
