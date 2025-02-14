@@ -1,26 +1,26 @@
 # Batterysecret
-persist.vendor.accelerate.charge u:object_r:vendor_batterysecret_prop:s0
+persist.vendor.accelerate.charge            u:object_r:vendor_batterysecret_prop:s0
 
 # Camera
-ro.boot.camera. u:object_r:vendor_mtk_camera_prop:s0
-persist.vendor.camera. u:object_r:vendor_mtk_camera_prop:s0
-vendor.debug.appcontrol.name u:object_r:vendor_mtk_camera_prop:s0
+ro.boot.camera.                             u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.                      u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.appcontrol.name                u:object_r:vendor_mtk_camera_prop:s0
 
 # Fingerprint
-persist.vendor.fpc. u:object_r:vendor_fingerprint_prop:s0
-persist.vendor.goodix. u:object_r:vendor_fingerprint_prop:s0
-persist.vendor.sys.fp. u:object_r:vendor_fingerprint_prop:s0
-ro.hardware.fp. u:object_r:vendor_fingerprint_prop:s0
-vendor.fps_hal. u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fpc.                         u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.goodix.                      u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                      u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                             u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                             u:object_r:vendor_fingerprint_prop:s0
 
 # Mlipay
-persist.vendor.sys.pay. u:object_r:vendor_mlipay_prop:s0
-persist.vendor.sys.provision.status u:object_r:vendor_mlipay_prop:s0
-vendor.sys.feature_state u:object_r:vendor_mlipay_prop:s0
-vendor.sys.rpmb_state u:object_r:vendor_mlipay_prop:s0
+persist.vendor.sys.pay.                     u:object_r:vendor_mlipay_prop:s0
+persist.vendor.sys.provision.status         u:object_r:vendor_mlipay_prop:s0
+vendor.sys.feature_state                    u:object_r:vendor_mlipay_prop:s0
+vendor.sys.rpmb_state                       u:object_r:vendor_mlipay_prop:s0
 
 # Sensors
-ro.vendor.sensors.xiaomi. u:object_r:vendor_sensors_prop:s0
+ro.vendor.sensors.xiaomi.                   u:object_r:vendor_sensors_prop:s0
 
 # Thermal
-vendor.sys.thermal.data.path u:object_r:vendor_thermal_prop:s0
+vendor.sys.thermal.data.path                u:object_r:vendor_thermal_prop:s0

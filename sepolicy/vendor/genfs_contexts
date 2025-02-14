@@ -1,49 +1,47 @@
 # Display
-genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/panel_info u:object_r:vendor_displayfeature_sysfs:s0
-genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone u:object_r:vendor_displayfeature_sysfs:s0
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone     u:object_r:vendor_displayfeature_sysfs:s0
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/panel_info           u:object_r:vendor_displayfeature_sysfs:s0
 
 # Extcon
-genfscon sysfs /devices/platform/soc/14800000.dp_tx/extcon u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/extcon_usb/extcon/extcon1 u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/extcon_usb1/extcon/extcon2 u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb1/extcon/extcon2                             u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb/extcon/extcon1                              u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/14800000.dp_tx/extcon                              u:object_r:sysfs_extcon:s0
 
 # Fingerprint
-genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param u:object_r:vendor_fingerprint_sysfs:s0
-genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status u:object_r:vendor_fingerprint_sysfs:s0
-genfscon sysfs /devices/platform/fingerprint/clk_enable u:object_r:vendor_fingerprint_sysfs:s0
-genfscon sysfs /devices/platform/fingerprint/fingerdown_wait u:object_r:vendor_fingerprint_sysfs:s0
-genfscon sysfs /devices/platform/fingerprint/irq u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/clk_enable                                 u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/fingerdown_wait                            u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/platform/fingerprint/irq                                        u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param           u:object_r:vendor_fingerprint_sysfs:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status                        u:object_r:vendor_fingerprint_sysfs:s0
 
 # Power
-genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0064/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0065/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/pdo2 u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/adapter_id u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/adapter_svid u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/verify_process u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/usbpd_verifed u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/current_pr u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/current_state u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0064/power_supply               u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-0065/power_supply               u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/adapter_id      u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/adapter_svid    u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/current_pr      u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/current_state   u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/pdo2            u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/pd_adapter/Charging_Adapter/pd_adapter/request_vdm_cmd u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0055/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0055/verify_digest u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0065/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0066/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0064/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0065/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0066/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0067/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xagapro_charger/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/fg_verify_digest u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_authenticate_process u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_authenticate_success u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_current_pr u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_current_state u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_id u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_request_vdm u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/pd_svid u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/power_supply u:object_r:sysfs_power_supply:s0
-genfscon sysfs /devices/platform/xiaomi_charge/power_supply/battery/input_suspend u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0055/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0055/verify_digest            u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0065/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-0066/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0064/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0065/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0066/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/soc/11d06000.i2c/i2c-9/9-0067/power_supply             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xagapro_charger/power_supply                           u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/fg_verify_digest                         u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_authenticate_process                  u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_authenticate_success                  u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_current_pr                            u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_current_state                         u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_id                                    u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_request_vdm                           u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/pd_svid                                  u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/power_supply                             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/xiaomi_charge/power_supply/battery/input_suspend       u:object_r:sysfs_power_supply:s0
 
 # Wakeup
 genfscon sysfs /devices/platform/10001000.consys/wakeup u:object_r:sysfs_wakeup:s0
