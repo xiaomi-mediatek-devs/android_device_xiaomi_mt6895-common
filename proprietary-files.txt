@@ -72,6 +72,8 @@ vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordUI_AudioParam.xml
 vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordVolUI_AudioParam.xml
+vendor/etc/audio_param/RecordVol_AudioParam.xml
+vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml
 vendor/etc/audio_param/Record_ParamTreeView.xml
 vendor/etc/audio_param/RingbackVolUI_AudioParam.xml
 vendor/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml
@@ -82,6 +84,7 @@ vendor/etc/audio_param/SpeechDMNR_AudioParam.xml
 vendor/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechEchoRef_AudioParam.xml
 vendor/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechGeneral_AudioParam.xml
 vendor/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechMagiClarity_AudioParam.xml
 vendor/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml
