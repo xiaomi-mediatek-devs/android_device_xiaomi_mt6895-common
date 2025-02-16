@@ -240,10 +240,25 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/libladder.so|db8bdb58e6f4a4250bb5f471fbe8ea6a12897c22
 
 # DRM
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libtlcWidevineModularDrm.so
+vendor/lib64/liburee_meta_drmkeyinstall.so
+vendor/lib64/libwvkeybox.so
+
+# DRM (widevine)
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/libwvhidl.so
+
+# Fido
+vendor/bin/fidoca_isee
+vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
+vendor/lib64/libmfido_isee.so
+
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.beanpod.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
@@ -320,6 +335,13 @@ vendor/etc/init/init.vtservice_hidl.rc
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
+vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
+
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
@@ -351,6 +373,18 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.3.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
+
+# Mlipay
+vendor/bin/mlipayd_isee@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc
+vendor/lib64/libmlipay_isee.so
+vendor/lib64/libmlipay_isee@1.1.so
+
+# Mtdservice
+vendor/bin/mtd_isee@1.3
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc
+vendor/lib64/libmt_isee.so
+vendor/lib64/libmt_isee@1.3.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
@@ -488,12 +522,25 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc
+vendor/lib64/jcos_nq_client-v1.so
+vendor/lib64/ls_nq_client-v1.so
+vendor/lib64/se_nq_extn_client-v1.so
+vendor/lib64/secure_element-impl.so
 
 # Sensors
 vendor/firmware/remoteproc_scp
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
+
+# Soter
+vendor/app/SoterService/SoterService.apk
+vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
+vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
+vendor/etc/vintf/manifest/manifest_wechat.xml
+vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
@@ -503,6 +550,24 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Trusted Execution Environment (TEE)
+vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
+vendor/bin/teei_daemon
+vendor/etc/init/microtrust.rc
+vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+vendor/etc/vintf/manifest/manifest.microtrust.xml
+vendor/lib64/libTEECommon.so
+vendor/lib64/libgz_gp_client.so
+vendor/lib64/libgz_uree.so
+vendor/lib64/libimsg_log.so
+vendor/lib64/libteeclientjni_isee.so
+vendor/lib64/libteeclientjni_isee@1.1.so
+vendor/lib64/libteei_daemon_vfs.so
+vendor/lib64/libthha.so
+vendor/lib64/libthhclient.so
+vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
+vendor/lib64/wechat.beanpod.so
 
 # Wi-Fi
 vendor/bin/wlan_assistant

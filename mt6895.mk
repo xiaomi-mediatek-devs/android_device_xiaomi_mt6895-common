@@ -285,9 +285,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 
-# TEE
-BOARD_TEE_VARIANT ?= beanpod
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek

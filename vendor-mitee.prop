@@ -1,4 +1,0 @@
-# TEE
-ro.vendor.mtk_mitee_support=1
-ro.hardware.gatekeeper=mitee
-ro.vendor.mtk_microtrust_tee_support=1
