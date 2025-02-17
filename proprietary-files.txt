@@ -535,6 +535,7 @@ vendor/lib64/secure_element-impl.so
 
 # Sensors
 vendor/firmware/remoteproc_scp
+vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6895.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
 
