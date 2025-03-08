@@ -6,8 +6,6 @@
 COMMON_PATH := device/xiaomi/mt6895-common
 
 # A/B
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     system \
     system_ext \
