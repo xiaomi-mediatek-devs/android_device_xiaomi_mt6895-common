@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V1-ndk.vendor \
     vibratorfeature-wrapper
 
 # Wi-Fi
