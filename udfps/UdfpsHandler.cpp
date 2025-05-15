@@ -72,7 +72,7 @@ static bool readBool(int fd) {
 
 }  // anonymous namespace
 
-class XiaomiMt6895UdfpsHander : public UdfpsHandler {
+class XiaomiMt6895UdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -156,7 +156,7 @@ class XiaomiMt6895UdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiMt6895UdfpsHander();
+    return new XiaomiMt6895UdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
