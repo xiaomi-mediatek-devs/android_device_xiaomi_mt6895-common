@@ -1,6 +1,6 @@
 on boot
     #GOODIX
-    chmod 0666 /dev/goodix_fp
+    chmod 0660 /dev/goodix_fp
     chown system system /dev/goodix_fp
     #fpc
     chown system system /sys/bus/platform/devices/fingerprint/clk_enable
@@ -35,9 +35,9 @@ on boot
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_param
     chown system system /sys/bus/platform/devices/fingerprint/fingerdown_wait
     #chmod 0664 /sys/bus/platform/devices/fingerprint/fingerdown_wait
-    chmod 0666 /dev/input/event2
+    chmod 0660 /dev/input/event2
     # xiaomi fingerprint
-    chmod 0666 /dev/xiaomi-fp
+    chmod 0660 /dev/xiaomi-fp
     chown system system /dev/xiaomi-fp
 
 on post-fs-data
