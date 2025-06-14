@@ -147,6 +147,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V3-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libcppbor_external.vendor \
+    libkeymint.vendor
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
