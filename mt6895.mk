@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
+
 # ConsumerIR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
