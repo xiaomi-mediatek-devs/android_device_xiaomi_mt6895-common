@@ -14,6 +14,9 @@
                minFrequency="2000000,2750000,1200000" />
         <Video name="c2.mtk.decoder.secure"
                maxConcurrentInstances="1" />
+        <Video name="cpu.boost.dolby.4k60fps"
+               cluster="0,1,2"
+               minFrequency="2000000,2750000,1500000" />
          <Video name="cpu.boost.720p180"
                cluster="0,1"
                minFrequency="2000000,2000000" />
