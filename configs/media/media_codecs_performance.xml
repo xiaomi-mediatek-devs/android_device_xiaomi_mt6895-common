@@ -79,12 +79,6 @@ Only the three quirks included above are recognized at this point:
 <MediaCodecs>
     <Encoders>
         <!-- MTK codec -->
-        <MediaCodec name="c2.mtk.mpeg4.encoder" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="1033-2272" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.h263.encoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="970-2134" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="300-450" />
             <Limit name="measured-frame-rate-720x480" range="155-350" />
